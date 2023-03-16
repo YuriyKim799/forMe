@@ -11,7 +11,7 @@
 <body>
   <canvas id="canvasElem" width="10000" height="1000" style="border:1px solid"></canvas>
   <script>
-    canvasElem.onmousemove = function (e) {
+    canvasElem.touchmove = function (e) {
       let ctx = canvasElem.getContext('2d');
       ctx.lineTo(e.clientX, e.clientY);
       ctx.stroke();
